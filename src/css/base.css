@@ -16,14 +16,18 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .HomePage .Movies .Movie {
   display: flex;
   flex-direction: row;
+  width: 35em;
+  height: 20em;
+  overflow: hidden;
 }
 .HomePage .Movies .Movie .ImageContainer {
-  width: 150px;
-  height: 350px;
+  width: 200px;
+  height: 300px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -32,6 +36,11 @@ body {
 }
 .HomePage .Movies .Movie .ImageContainer .MovieImage {
   height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+.HomePage .Movies .Movie .MovieInfo {
+  padding-left: 2em;
 }
 
 /*# sourceMappingURL=base.css.map */
