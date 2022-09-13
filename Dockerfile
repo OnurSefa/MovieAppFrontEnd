@@ -1,13 +1,9 @@
-FROM python:3.9.5-buster
+FROM node:alpine
 
 WORKDIR .
 
 COPY . .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN npm i
 
-EXPOSE 5000
-
-ENTRYPOINT ["npm"]
-
-CMD ["start"]
+CMD ["npm", "run", "start"]
