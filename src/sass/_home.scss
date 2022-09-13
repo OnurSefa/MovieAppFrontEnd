@@ -1,11 +1,47 @@
 .HomePage{
-    background-color: #D3F3F1;
+    background-color: #e2eafc;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    cursor: default;
+    
     .HomeHeader{
-        background-color: #E0E0EB;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fad2e1;
+        width: 100%;
+        height: 2.4em;
+
+        text-align: center;
+        font-size: 42px;
+        color: #9381ff;
+        font-family: 'Lobster', cursive;
+        border-bottom-left-radius: 1.7em;
+        border-bottom-right-radius: 1.7em;
+
+    }
+
+    .AddMovieButton{
+        width: 7em;
+        height: 2em;
+        margin: 0.5em;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #84dcc6;
+
+        border-radius: 1.3em;
+
+        text-align: center;
+        font-size: 24px;
+        color: #f0efeb;
+        font-family: 'SecularOne', regular;
     }
 
     .Movies{
@@ -17,27 +53,99 @@
         .Movie{
             display: flex;
             flex-direction: row;
-            width: 35em;
-            height: 20em;
+            width: 28em;
             overflow: hidden;
+
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 2em;
+            margin: 1em;
 
             .ImageContainer{
                 width: 200px;
-                height: 300px;
+                max-height: 300px;
                 display: flex;
                 flex-direction: row;
                 overflow: hidden;
                 align-items: center;
                 justify-content: center;
                 .MovieImage{
-                    height: 300px;
                     width: 200px;
+                    max-height: 300px;
                     object-fit: cover;
                 }
             }
 
             .MovieInfo{
                 padding-left: 2em;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 300px;
+
+                .MovieHeading{
+                    font-family: 'AbrilFatface', cursive;
+                    font-size: 2em;
+                    color: #9381ff;
+                }
+
+                .Date{
+                    font-family: 'AbrilFatface', cursive;
+                    font-size: 1.2em;
+                }
+
+                .Minutes{
+                    font-family: 'AbrilFatface', cursive;
+                    font-size: 1.2em;
+                }
+
+                .Genres{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+
+                    .GenreName{
+                        background-color: #84dcc6;
+                        border-radius: 0.7em;
+                        font-family: 'AbrilFatface', cursive;
+                        font-size: 1.2em;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+
+                        padding-left: 0.5em;
+                        padding-right: 0.5em;
+                        padding-bottom: 0.2em;
+                        margin: 0.2em;
+                    }
+                }
+
+                .Remove{
+                    width: 7em;
+                    height: 2em;
+                    margin: 0.5em;
+            
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #9a031e;
+            
+                    border-radius: 1.3em;
+            
+                    text-align: center;
+                    font-size: 24px;
+                    color: #f0efeb;
+                    font-family: 'SecularOne', regular;
+
+                    align-self: center;
+                    cursor: pointer;
+                    // justify-self: flex-end;
+                }
             }
         }
     }

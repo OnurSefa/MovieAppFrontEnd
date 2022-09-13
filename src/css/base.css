@@ -2,15 +2,59 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "AbrilFatface";
+  src: local("AbrilFatface"), url("../fonts/AbrilFatface-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url("../fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
+@font-face {
+  font-family: "SecularOne";
+  src: local("SecularOne"), url("../fonts/SecularOne-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
 .HomePage {
-  background-color: #D3F3F1;
+  background-color: #e2eafc;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  cursor: default;
 }
 .HomePage .HomeHeader {
-  background-color: #E0E0EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fad2e1;
+  width: 100%;
+  height: 2.4em;
+  text-align: center;
+  font-size: 42px;
+  color: #9381ff;
+  font-family: "Lobster", cursive;
+  border-bottom-left-radius: 1.7em;
+  border-bottom-right-radius: 1.7em;
+}
+.HomePage .AddMovieButton {
+  width: 7em;
+  height: 2em;
+  margin: 0.5em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #84dcc6;
+  border-radius: 1.3em;
+  text-align: center;
+  font-size: 24px;
+  color: #f0efeb;
+  font-family: "SecularOne", regular;
 }
 .HomePage .Movies {
   display: flex;
@@ -21,13 +65,16 @@ body {
 .HomePage .Movies .Movie {
   display: flex;
   flex-direction: row;
-  width: 35em;
-  height: 20em;
+  width: 28em;
   overflow: hidden;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 2em;
+  margin: 1em;
 }
 .HomePage .Movies .Movie .ImageContainer {
   width: 200px;
-  height: 300px;
+  max-height: 300px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -35,12 +82,67 @@ body {
   justify-content: center;
 }
 .HomePage .Movies .Movie .ImageContainer .MovieImage {
-  height: 300px;
   width: 200px;
+  max-height: 300px;
   object-fit: cover;
 }
 .HomePage .Movies .Movie .MovieInfo {
   padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+}
+.HomePage .Movies .Movie .MovieInfo .MovieHeading {
+  font-family: "AbrilFatface", cursive;
+  font-size: 2em;
+  color: #9381ff;
+}
+.HomePage .Movies .Movie .MovieInfo .Date {
+  font-family: "AbrilFatface", cursive;
+  font-size: 1.2em;
+}
+.HomePage .Movies .Movie .MovieInfo .Minutes {
+  font-family: "AbrilFatface", cursive;
+  font-size: 1.2em;
+}
+.HomePage .Movies .Movie .MovieInfo .Genres {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.HomePage .Movies .Movie .MovieInfo .Genres .GenreName {
+  background-color: #84dcc6;
+  border-radius: 0.7em;
+  font-family: "AbrilFatface", cursive;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.2em;
+  margin: 0.2em;
+}
+.HomePage .Movies .Movie .MovieInfo .Remove {
+  width: 7em;
+  height: 2em;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9a031e;
+  border-radius: 1.3em;
+  text-align: center;
+  font-size: 24px;
+  color: #f0efeb;
+  font-family: "SecularOne", regular;
+  align-self: center;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=base.css.map */

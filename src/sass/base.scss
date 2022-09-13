@@ -3,5 +3,24 @@ body{
     margin: 0;
 }
 
+@font-face {
+    font-family: "AbrilFatface";
+    src: local("AbrilFatface"),
+     url("../fonts/AbrilFatface-Regular.ttf") format("truetype");
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: local("Lobster"),
+     url("../fonts/Lobster-Regular.ttf") format("truetype");
+    font-weight: regular;
+}
+@font-face {
+    font-family: "SecularOne";
+    src: local("SecularOne"),
+     url("../fonts/SecularOne-Regular.ttf") format("truetype");
+    font-weight: regular;
+}
 
 @import "./home"
